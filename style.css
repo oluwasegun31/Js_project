@@ -123,7 +123,7 @@
 @media (min-width:765px) and (max-width:999px) {
     .time, .heart {
         top:25%;
-        font-size: 24px;
+        font-size: 16px;
         left: 37%;
     }
 }
