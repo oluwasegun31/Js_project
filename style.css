@@ -79,7 +79,8 @@
 }
 .time {
     position: absolute;
-    transform: translate(126%,-540%);
+    top: 40%;
+    left: 38%;;
     color: white;
     font-weight: 700;
     font-size: 24px;
@@ -87,7 +88,8 @@
 .heart {
     display: none;
     position: absolute;
-    transform: translate(-470%,540%);
+    top: 40%;
+    left: 45%;
     width: 40px;
     height: 40px;
     animation-name: pulse;
@@ -97,15 +99,37 @@
 }
 @keyframes pulse {
     0% {
-        position: absolute;
-        left: 18%;
-        bottom: 45%;
         transform: scale(1);
     }
     100% {
-        position: absolute;
-        left: 18%;
-        bottom: 45%;
         transform: scale(1.5);
+    }
+}
+
+.display {
+    position: relative;
+}
+
+@media (min-width:1000px) and (max-width:1200px){
+    .time, .heart {
+        top: 33%;
+        font-size: 20px;
+        left: 37%;
+    }
+    .heart {
+        left: 40%;
+    }
+}
+@media (min-width:765px) and (max-width:999px) {
+    .time, .heart {
+        top:25%;
+        font-size: 24px;
+        left: 37%;
+    }
+}
+@media (min-width:578px) and (max-width:767px){
+    .time, .heart {
+        top: 48%;
+        font-size: 24px;
     }
 }
