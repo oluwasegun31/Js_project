@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Flat', cursive;
+}
+
+.logo-name{
+    font-size: 26px !important;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+.writing h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.writing .lorem {
+    margin-bottom: 32px;
+}
+.heading-small {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+.black {
+    height: 60px;
+    background-color: #23211f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.orange{
+    height: 60px;
+    background-color: #ca3d22;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blue{
+    height: 60px;
+    background-color: #565681;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.purple {
+    height: 60px;
+    background-color: #8a5362;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pink {
+    height: 60px;
+    background-color: #e9c7be;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.but, .but2{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 12px;
+    background-color: grey;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.but3{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 14px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+.time {
+    position: absolute;
+    transform: translate(126%,-540%);
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.heart {
+    display: none;
+    position: absolute;
+    transform: translate(-470%,540%);
+    width: 40px;
+    height: 40px;
+    animation-name: pulse;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes pulse {
+    0% {
+        position: absolute;
+        left: 18%;
+        bottom: 45%;
+        transform: scale(1);
+    }
+    100% {
+        position: absolute;
+        left: 18%;
+        bottom: 45%;
+        transform: scale(1.5);
+    }
+}
