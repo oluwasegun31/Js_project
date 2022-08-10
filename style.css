@@ -134,3 +134,9 @@
         font-size: 24px;
     }
 }
+
+@media (max-width:375px) {
+    .time{
+        left:36%
+    }
+}
