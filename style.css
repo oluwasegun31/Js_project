@@ -4,6 +4,18 @@
     padding: 0;
     font-family: 'Nova Flat', cursive;
 }
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:hsla(0,0%,100%,1);
+    background-image:
+    radial-gradient(at 0% 100%, hsla(9,0%,100%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(20,100%,82%,0.45) 0px, transparent 50%),
+    radial-gradient(at 0% 21%, hsla(214,100%,80%,0.4) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .logo-name{
     font-size: 26px !important;
@@ -81,7 +93,7 @@
 .time {
     position: absolute;
     top: 40%;
-    left: 38%;;
+    left: 35.5%;;
     color: white;
     font-weight: 700;
     font-size: 24px;
@@ -103,7 +115,7 @@
         transform: scale(1);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.3);
     }
 }
 
@@ -120,6 +132,9 @@
     .heart {
         left: 40%;
     }
+    body{
+        height: auto;
+    }
 }
 @media (min-width:765px) and (max-width:999px) {
     .time, .heart {
@@ -127,16 +142,29 @@
         font-size: 16px;
         left: 37%;
     }
+    body{
+        height: auto;
+    }
 }
 @media (min-width:578px) and (max-width:767px){
     .time, .heart {
         top: 48%;
         font-size: 24px;
     }
+    body{
+        height: auto;
+    }
 }
-
+@media(max-width: 578px){
+    body{
+        height: auto;
+    }
+}
 @media (max-width:375px) {
     .time{
         left:36%
+    }
+    body{
+        height: auto;
     }
 }
