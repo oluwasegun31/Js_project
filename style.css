@@ -109,6 +109,7 @@ body {
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    animation-direction: reverse;
 }
 @keyframes pulse {
     0% {
@@ -135,6 +136,14 @@ body {
     body{
         height: auto;
     }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
 }
 @media (min-width:765px) and (max-width:999px) {
     .time, .heart {
@@ -145,6 +154,14 @@ body {
     body{
         height: auto;
     }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.7);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
 }
 @media (min-width:578px) and (max-width:767px){
     .time, .heart {
@@ -153,6 +170,14 @@ body {
     }
     body{
         height: auto;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.7);
+        }
+        100% {
+            transform: scale(1.1);
+        }
     }
 }
 @media(max-width: 578px){
@@ -166,5 +191,13 @@ body {
     }
     body{
         height: auto;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.7);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 }
