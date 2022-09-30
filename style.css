@@ -42,9 +42,8 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 5rem;
-    position: relative;
 }
-.watch-set{
+.watch-sect{
     position: relative;
 }
 .watch{
@@ -58,7 +57,7 @@ main{
 .watch-cont{
     position: absolute;
     top: 44%;
-    left: 13%;
+    left: 38%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +87,7 @@ main{
 .watch-details{
     display: flex;
     flex-direction: column;
+    padding-right: 10rem;
 }
 
 .watch-details h1{
@@ -100,7 +100,6 @@ main{
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 20px;
-    padding-right: 10rem;
 }
 .watch-details h4{
     font-size: 24px;
@@ -156,4 +155,32 @@ main{
     background: #e7951a;
     cursor: pointer;
     color: #fff;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .watch-details{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    .watch-details{
+        padding: 0 1rem;
+    }
+    .watch{
+        width: 20rem;
+        height: 25rem;
+    }
+    .watch-cont{
+        left: 37%;
+    }
+    .watch-cont p{
+        font-size: 18px;
+    }
 }
