@@ -1,48 +1,55 @@
-let black = document.querySelector(".black")
-let orange = document.querySelector(".orange")
-let blue = document.querySelector(".blue")
-let purple = document.querySelector(".purple")
-let pink = document.querySelector(".pink")
-let picture = document.querySelector(".img-fluid")
-let time = document.querySelector(".time")
-let heart = document.querySelector(".heart")
-let btnTime = document.querySelector(".but")
-let btnHeart = document.querySelector(".but2")
+const black = document.querySelector(".black")
+const orange = document.querySelector(".orange")
+const blue = document.querySelector(".blue")
+const pink = document.querySelector(".pink")
+const purple = document.querySelector(".purple")
+const watchImg = document.querySelector(".watch img")
+const time = document.querySelector('.watch-cont p')
+const timeBtn = document.querySelector('.timebtn')
+const heart = document.querySelector('.heart')
+const heartBtn = document.querySelector('.heartbtn')
 
-// color changing
-black.addEventListener('click', function (){
-    picture.src = "https://i.imgur.com/iOeUBV7.png"
+//////////////COLOR////////////////////////
+black.addEventListener('click', function(e){
+    e.preventDefault()
+    watchImg.src = "https://i.imgur.com/iOeUBV7.png"
 })
-orange.addEventListener('click', function(){
-    picture.src = "https://i.imgur.com/PTgQlim.png"
+orange.addEventListener('click', function(e){
+    e.preventDefault()
+    watchImg.src = "https://i.imgur.com/PTgQlim.png"
 })
-blue.addEventListener('click', function(){
-    picture.src = "https://i.imgur.com/Mplj1YR.png"
+blue.addEventListener('click', function(e){
+    e.preventDefault()
+    watchImg.src = "https://i.imgur.com/Mplj1YR.png"
 })
-pink.addEventListener('click', function(){
-    picture.src = "https://i.imgur.com/Zygu7I3.png"
+pink.addEventListener('click', function(e){
+    e.preventDefault()
+    watchImg.src = "https://i.imgur.com/Zygu7I3.png"
 })
-purple.addEventListener('click', function(){
-    picture.src = "https://i.imgur.com/xSIK4M8.png"
+purple.addEventListener('click', function(e){
+    e.preventDefault()
+    watchImg.src = "https://i.imgur.com/xSIK4M8.png"
 })
 
-//time
 
-setInterval( function(){
-    var today = new Date();
-    let addZeros = function (num) {
-        return num < 10 ? `0${num}` : num;
+////Time
+setInterval (function(){
+    function getZeros(num){
+        return num < 10 ? `0${num}` : num
     }
-    time.innerHTML = `${addZeros(today.getHours())}:${addZeros(today.getMinutes())}:${addZeros(today.getSeconds())}`
+    const getTime = new Date()
+    let hour = getZeros(getTime.getHours())
+    let minute = getZeros(getTime.getMinutes())
+    let seconds = getZeros(getTime.getSeconds())
+    const timeFormat = `${hour}:${minute}:${seconds}`
+    time.innerText = timeFormat
 }, 1000)
-btnTime.addEventListener('click', function(){
-    time.style.display = "block"
+
+timeBtn.addEventListener('click', function(){
+    time.style.display = "flex"
     heart.style.display = "none"
 })
-btnHeart.addEventListener('click', function(){
+heartBtn.addEventListener('click', function(){
     time.style.display = "none"
-    heart.style.display = "block"
+    heart.style.display = "flex"
 })
-
-
-
