@@ -63,7 +63,7 @@ main{
     align-items: center;
     font-size: 24px;
     font-weight: 700;
-    color: red;
+    color: #fff;
 }
 .heart{
     width: 3rem;
@@ -182,5 +182,49 @@ main{
     }
     .watch-cont p{
         font-size: 18px;
+    }
+}
+@media (max-width: 400px) {
+    nav .logo{
+        font-size: 24px;
+    }
+    .watch-details h1{
+        font-size: 24px;
+    }
+    .watch-details p {
+        font-size: 16px;
+    }
+    .watch-details h4{
+        font-size: 20px;
+    }
+    .btn{
+        width: 4rem;
+        height: 2.5rem;
+    }
+    .timerate{
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 14px;
+    }
+    .btn3{
+        width: 8rem;
+        height: 2rem;
+        font-size: 14px;
+    }
+}
+@media (max-width: 340px) {
+    .watch{
+        width: 17rem;
+        height: 22rem;
+    }
+    .watch-cont{
+        left: 35%;
+    }
+    .watch-cont p{
+        font-size: 15px;
+    }
+    .heart{
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
